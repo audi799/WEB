@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div>
+    <h1>회원가입</h1>
+</div>
+
+<div>
+    <form>
+        <label>
+            이메일 <br><input type="email" name="email">
+            <button>중복 확인</button>
+        </label>
+        <br>
+        <label>
+            비밀번호
+            <br>
+            <input type="password" name="pass">
+            <br>
+            비밀번호 재입력
+            <br>
+            <input type="password" name="repass">
+            <br>
+        </label>
+        <label>
+            연락처
+            <br>
+            <select name="combobox">
+                <option disabled hidden selected value="-1">통신사</option>
+                <option>SKT</option>
+                <option>KT</option>
+                <option>LGU+</option>
+                <option>기타</option>
+            </select>
+            <input type="tel" name="tel" placeholder="연락처('-'없이)">
+            <br>
+        </label>
+        <label>
+            닉네임
+            <br>
+            <input type="text" name="nickName">
+            <button>중복 확인</button>
+            <br>
+        </label>
+        <label>
+            주소
+            <br>
+            <input readonly type="text" placeholder="우편번호" name="address">
+            <button>주소 찾기</button>
+            <br>
+            <input readonly type="text" placeholder="기본주소" name="defaultAddress">
+            <br>
+            <input type="text" placeholder="상세주소(건물 이름,동,호 등)" name="detailAddress">
+            <br>
+            우편번호와 기본주소는 '주소 찾기'를 통해 입력할 수 있습니다.
+            <br>
+        </label>
+        <label>
+            서비스 이용약관 및 개인정보 처리방침
+            <br>
+            <textarea readonly name="public">어쩌고 저쩌고</textarea>
+            <br>
+        </label>
+        <label>
+            <input type="checkbox" name="check"> 위 서비스 이용약관 및 개인정보 처리방침을 읽어보았고 이해하였으며 동의합니다.
+            <br>
+        </label>
+        <label>
+            <input type="reset" value="처음부터 다시하기" name="reset">
+            <input type="submit" value="회원가입" name="join">
+        </label>
+    </form>
+</div>
+</body>
+</html>

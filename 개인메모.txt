@@ -1,0 +1,48 @@
+[ 인텔리J 단축키 ]
+* 프로젝트 만든 이후 공백에 ! 누르고 탭키 누르면 html 기본구조 자동완성됨
+* 자동들여쓰기정렬 컨트롤+알트+L
+* 주석처리 컨트롤 + /  , 범위지정하면 범위주석가능.
+* 리팩토링 쉬프트 + F6 --> 동일한 단어 자동선택 되서 동시 수정가능함.
+
+
+
+#### https://icons8.com/ --> 각종 무료 아이콘들
+#### https://www.data.go.kr/ --> 정부오픈API
+#### 구글검색 apexcharts.js / chart.js (이게더좋은거같다함-강사) 차트그리기위한 라이브러리
+#### https://pixlr.com/kr/    // 사진편집기 무료온라인
+#### https://portone.io  //결제연동서비스 (테스트로씀)
+
+--주식정보API
+https://apis.data.go.kr/1160100/service/GetKrxListedInfoService/getItemInfo?serviceKey=zLLw9vnuyP4OtHI2Ol7GNM2xx6%2FZ0ylj0Rl%2FjR8mBPHTbP0uGOFw4qcP5aF4C8fGjNS4PnhUPTd5bIMe8yBgtw%3D%3D&numOfRows=100&pageNo=1&resultType=json
+
+--금융위정보API (안씀)
+http://apis.data.go.kr/1160100/service/GetDiscInfoService_V2/getDiviDiscInfo_V2?serviceKey=zLLw9vnuyP4OtHI2Ol7GNM2xx6%2FZ0ylj0Rl%2FjR8mBPHTbP0uGOFw4qcP5aF4C8fGjNS4PnhUPTd5bIMe8yBgtw%3D%3D&numOfRows=100&pageNo=1&resultType=json
+
+--금융위차트API
+https://apis.data.go.kr/1160100/service/GetStockSecuritiesInfoService/getStockPriceInfo?serviceKey=zLLw9vnuyP4OtHI2Ol7GNM2xx6%2FZ0ylj0Rl%2FjR8mBPHTbP0uGOFw4qcP5aF4C8fGjNS4PnhUPTd5bIMe8yBgtw%3D%3D&numOfRows=5000&pageNo=1&resultType=json&beginBasDt=시작날짜&endBasDt=종료날짜&likeSrtnCd=종목코드
+
+https://apis.data.go.kr/1160100/service/GetStockSecuritiesInfoService/getStockPriceInfo?serviceKey=zLLw9vnuyP4OtHI2Ol7GNM2xx6%2FZ0ylj0Rl%2FjR8mBPHTbP0uGOFw4qcP5aF4C8fGjNS4PnhUPTd5bIMe8yBgtw%3D%3D&numOfRows=5000&pageNo=1&resultType=json&beginBasDt=20250101&endBasDt=20250310&likeSrtnCd=005930
+
+*함수 관련
+date = new Date();
+date.toISOString(); -> 2025-03-14T06:27:12.408Z 형태로 만들어줌.
+
+'대구 중구 중앙대로'.split(' ') --> ['대구', '중구' ,'중앙대로'] 배열로 잘라서만들어줌
+
+date.toISOString().split('T'); --> ['2025-03-14', '06:27:12.408Z']
+
+06:27:12.408Z.split() --> ['06:27:12', '408Z']
+
+즉,
+date.toISOString().split('T').map((s) => s.split('.')[0]).join(); -> 2025-03-14 06:27:12 형태로 나옴.
+
+
+
+
+-시험관련 (월~수 개발해서 수요일날 제출)
+html / css / js 다 사용.
+html 시멘틱 크게안봄.
+css 디자인 위주
+js 큰비중 api하나 반드시사용하기 (키를 사용해야만 인정)
+서술형x
+키오스크, 길찾기가 메인주제가 되면 안됨.(여태강의하면서했던거)

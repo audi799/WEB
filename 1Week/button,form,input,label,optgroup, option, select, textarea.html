@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>button, form, input, label, optgroup, option, select, textarea 태그</title>
+</head>
+<body>
+<form>
+    <!--    text: <input required type="text" maxlength="13" minlength="13" pattern="010-\d{4}-\d{4}" value="초기값"> <br>-->
+    <!--    button: <input type="button" value="Click Me!"> <br>-->
+    <!--    checkbox: <input type="checkbox" checked> <br>-->
+    <!--    color: <input type="color"> <br>-->
+    <!--    date: <input type="date" value="2025-02-27"> <br>-->
+    <!--    datetime-local: <input type="datetime-local" value="2025-02-17 10:00:00"> <br>-->
+    <!--    time: <input type="time" value="12:12:12"> <br>-->
+    <!--    email: <input type="email" value="ttttt@gmail.com" autofocus readonly> <br>-->
+    <!--    file: <input type="file" multiple accept=".jpg, .jpeg, .png, .gif, .webp, image/*"> <br>-->
+    <!--    hidden: <input type="hidden"> <br>-->
+    <!--    number: <input type="number" max="100" min="-20"> <br>-->
+    <!--    password: <input type="password"> <br>-->
+    <!--    radio: <input name="tel" type="radio" checked>SKT <input name="tel" type="radio">KT <input name="tel" type="radio">LGU+-->
+    <!--    <br>-->
+    <!--    range: <input type="range" min="0" max="50" step="10"> <br>-->
+    <!--    reset: <input type="reset" value="리셋!" disabled> <br>-->
+    <!--    search: <input type="search" placeholder="검색어를 입력해주세요!" spellcheck="true"> <br>-->
+    <!--    submit: <input type="submit" value="로그인/검색"> <br>-->
+    <!--    tel: <input type="tel" required> <br>-->
+    <!--    <br>-->
+
+    <!--    <input type="button" value="이건 input 버튼"> <br>-->
+    <!--    <button type="button">-->
+    <!--        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ59LrNTp_98bZ6DvIlQbA5c3yjnmvy1Dq9eA&s">-->
+    <!--        검색-->
+    <!--    </button>-->
+    <!--    <br> <br>-->
+
+    <label for="menu"></label>
+    <select id="menu" name="menu">
+        <option disabled hidden selected value="-1">메뉴를 선택해 주세요.</option>
+        <optgroup disabled label="중식">
+            <option value="c_01">짜장면</option>
+            <option value="c_02">짬뽕</option>
+            <option value="c_03">볶음밥</option>
+        </optgroup>
+        <optgroup label="한식">
+            <option value="k_01">김밥</option>
+            <option value="k_02">라면</option>
+            <option value="k_03">냉면(계절)</option>
+        </optgroup>
+        <optgroup label="일식">
+            <option value="j_01">등등</option>
+        </optgroup>
+    </select>
+    <button type="submit">주문하기</button>
+
+    <label>
+        <textarea cols="10" rows="3">Hello!</textarea>
+    </label>
+</form>
+</body>
+</html>

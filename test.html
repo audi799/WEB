@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<button class="button1">버튼1</button>
+
+<script>
+    const $button1 = document.body.querySelector(':scope > .button1');
+
+    // returnA를 함수로 정의
+    let returnA = function(val) {
+        console.log('Function called with:', val);
+    };
+
+    $button1.addEventListener('click', () => {
+        test(returnA, 'b');  // returnA는 이제 함수
+        alert('returnA is a function');  // 정상적으로 alert 호출
+    });
+
+    function test(a, b) {
+        a('a');  // a는 함수이므로 정상적으로 호출
+    }
+</script>
+
+
+</body>
+</html>
